@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "livecoding-ASP.NET-first-project", "livecoding-ASP.NET-first-project.csproj", "{C37EA559-824F-40C9-A633-EEC9CCF3FC4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C37EA559-824F-40C9-A633-EEC9CCF3FC4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C37EA559-824F-40C9-A633-EEC9CCF3FC4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C37EA559-824F-40C9-A633-EEC9CCF3FC4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C37EA559-824F-40C9-A633-EEC9CCF3FC4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0241627-1A9A-45CF-B4B2-C26FF671C86E}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,54 @@
+﻿
+
+@{
+    string content = "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+    string imgUrl = "https://picsum.photos/200/300";
+
+    Post post1 = new Post("Ciao a tutti", content, imgUrl);
+    Post post2 = new Post("Un nuovo mondo", content, imgUrl);
+    Post post3 = new Post("La pasta fa male?", content, imgUrl);
+    Post post4 = new Post("La terra è esagonale", content, imgUrl);
+    Post post5 = new Post("Mah", content, imgUrl);
+
+    List<Post> posts = new List<Post>();
+    posts.Add(post1);
+    posts.Add(post2);
+    posts.Add(post3);
+    posts.Add(post4);
+    posts.Add(post5);
+}
+
+
+
+<h1>Lista con tutti i post</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Image</td>
+            <td>Title</td>
+            <td>Content</tr>
+        </tr>
+    </thead>
+
+    <tbody>
+    @foreach (var post in posts)
+    {
+        <tr>
+            <td>
+                <h2>@post.Id</h2>
+            </td>
+            <td>
+                <img class="img-fluid" src="@post.ImageUrl" />
+            </td>
+            <td>
+                <h2><a href="~/Posts/Details/@post.Id">@post.Title</a></h2>
+            </td>
+            <td>
+                <p>@post.Content</p>
+            </td>
+
+        </tr>
+    }
+    </tbody>
+</table>
